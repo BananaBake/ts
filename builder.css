@@ -3,6 +3,10 @@ html {
   width: 100vw;
 }
 
+table {
+  width: 100%;
+}
+
 .header {
   text-align: center;
   color: #b1e3b1;
