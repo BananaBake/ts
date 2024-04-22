@@ -1,0 +1,82 @@
+html {
+  height: 100%;
+  width: 100vw;
+}
+
+.header {
+  text-align: center;
+  color: #b1e3b1;
+  background-color: #003800;
+  border-radius: 20px;
+  animation: wave-text 1.5s ease-in-out infinite,
+    slide 1s ease-in-out;
+}
+
+.o {
+  background-color: #b1e3b1;
+  border-radius: 20px;
+  margin-top: 10px;
+  padding: 10px;
+  color: #003800;
+  animation: expand 1s ease-in-out;
+}
+
+body {
+  background-image: url(code.jpeg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+svg {
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+}
+
+@keyframes wave-text {
+  0% {
+    text-shadow: 0 0.1em rgba(0, 0, 0, 0.2);
+  }
+
+  50% {
+    text-shadow: 0 0.5em rgba(0, 0, 0, 0.4);
+  }
+
+  100% {
+    text-shadow: 0 0.1em rgba(0, 0, 0, 0.2);
+  }
+}
+
+@keyframes expand {
+  0% {
+    opacity: 0.1;
+    transform: scale(0.6);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(1%);
+  }
+}
+
+
+
+.jersey-10-regular,
+body,
+h1,
+h2 {
+  font-family: "Jersey 10", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}

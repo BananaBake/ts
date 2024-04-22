@@ -1,0 +1,181 @@
+html {
+  height: 100%;
+  width: 100vw;
+}
+
+.header {
+  text-align: center;
+  color: #b1e3b1;
+  background-color: #003800;
+  border-radius: 20px;
+  animation: wave-text 1.5s ease-in-out infinite,
+    slide 1s ease-in-out;
+}
+
+.o {
+  background-color: #67c267;
+  border-radius: 20px;
+  margin-top: 10px;
+  padding: 10px;
+  color: #003800;
+  border: 2px solid #001c00;
+}
+
+.info {
+  background-color: #318531;
+  border-radius: 10px;
+  margin-top: 10px;
+  padding: 10px;
+  color: #baf5ba;
+  animation: expand 1s ease-in-out;
+}
+
+.sep {
+  background-color: #173d17;
+  width: inherit;
+  height: 3px;
+  animation: load 3s ease-in-out;
+}
+
+.fade {
+  color: #f5bdba;
+  animation: fade-in 3s ease-in-out;
+}
+
+svg {
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+}
+
+.all {
+  border-radius: 10px;
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  text-align: center;
+  background-color: #3ba13b;
+}
+
+button {
+  border: none;
+  font-family: "Exo 2", sans-serif;
+}
+
+.new {
+  background-color: #003800;
+  color: #b1e3b1;
+  border-radius: 10px;
+  border: none;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.dive {
+  background-color: #6cc763;
+  border-radius: 10px;
+  margin-top: 10px;
+  padding: 10px;
+  overflow: hidden;
+  animation: load 1s ease-in-out;
+}
+
+p {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.projects {
+  padding: 10px;
+  margin-top: 10px;
+  animation: expand 1s ease-in-out;
+}
+
+.large {
+  font-size: 10em;
+  text-align: center;
+  margin-top: 10px;
+  animation: expand 1s ease-in-out, wave-text 2.5s ease-in-out infinite;
+}
+
+@keyframes wave-text {
+  0% {
+    text-shadow: 0 0.1em rgba(0, 0, 0, 0.2);
+  }
+
+  50% {
+    text-shadow: 0 0.5em rgba(0, 0, 0, 0.4);
+  }
+
+  100% {
+    text-shadow: 0 0.1em rgba(0, 0, 0, 0.2);
+  }
+}
+
+@keyframes expand {
+  0% {
+    opacity: 0.1;
+    transform: scale(0.6);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(1%);
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0.1;
+    color: #baf5ba;
+  }
+
+  100% {
+    opacity: 1;
+    color: #f5bdba;
+  }
+}
+
+@keyframes load {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
+
+.jersey-10-regular,
+body,
+h1,
+h2,
+h3
+{
+  font-family: "Jersey 10", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.exo2 {
+  font-family: "Exo 2", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+body {
+  background-color: #b1e3b1;
+  color: #003800;
+}
