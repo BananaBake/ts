@@ -49,6 +49,5 @@ displayProjects();
 // display create new project popup
 function popup() {
   const popup = document.getElementById("popup");
-  popup.style.display = "block";
-
+  popup.hidden = false;
 }
